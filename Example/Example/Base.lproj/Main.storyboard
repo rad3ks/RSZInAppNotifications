@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DsY-6n-snW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Container View Controller-->
+        <scene sceneID="ksw-9G-x4v">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="DsY-6n-snW" customClass="RSZBaseContainerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CJO-Bh-lwh"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Gc-Sg-9cs"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2w1-nh-C4M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQo-y1-Pj0">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <connections>
+                                    <segue destination="Fr1-Wq-FZI" kind="embed" id="O3v-WI-xrf"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hQo-y1-Pj0" secondAttribute="trailing" constant="-16" id="8RB-Vf-Bau"/>
+                            <constraint firstItem="6Gc-Sg-9cs" firstAttribute="top" secondItem="hQo-y1-Pj0" secondAttribute="bottom" id="P3T-FM-F6j"/>
+                            <constraint firstItem="hQo-y1-Pj0" firstAttribute="leading" secondItem="2w1-nh-C4M" secondAttribute="leadingMargin" constant="-16" id="iXk-nD-c5z"/>
+                            <constraint firstItem="hQo-y1-Pj0" firstAttribute="top" secondItem="CJO-Bh-lwh" secondAttribute="bottom" id="nKn-Z7-1Zg"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="contentSubview" destination="hQo-y1-Pj0" id="Lbb-Ew-zPq"/>
+                        <outlet property="topSpaceConstraint" destination="nKn-Z7-1Zg" id="aFN-3i-SSe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gf-fW-TOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319" y="504"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bpi-15-lfy">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Fr1-Wq-FZI" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p9w-wO-tVW"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZbQ-R7-WWd"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SsK-0k-0dY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzX-j2-z0B">
+                                <rect key="frame" x="90" y="201" width="140" height="146"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRL-A7-DA4">
+                                        <rect key="frame" x="32" y="58" width="76" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="rZY-zs-3ze"/>
+                                        </constraints>
+                                        <state key="normal" title="Delayed 3s">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showDelayedNotification:" destination="Fr1-Wq-FZI" eventType="touchUpInside" id="c4k-Fy-1im"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-n7-jhg">
+                                        <rect key="frame" x="16" y="96" width="108" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="108" id="f1a-4s-cAB"/>
+                                        </constraints>
+                                        <state key="normal" title="Manual Dismiss">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showNonAutoDismissalNotification:" destination="Fr1-Wq-FZI" eventType="touchUpInside" id="eMO-ga-59R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsV-I4-SyD">
+                                        <rect key="frame" x="44" y="20" width="53" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="53" id="1Kn-Qj-M3k"/>
+                                        </constraints>
+                                        <state key="normal" title="Regular">
+                                            <color key="titleColor" red="1" green="0.062871393489999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showRedNotification:" destination="Fr1-Wq-FZI" eventType="touchUpInside" id="tQT-o1-rxz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="wVg-n7-jhg" secondAttribute="centerX" id="14F-K7-gEZ"/>
+                                    <constraint firstAttribute="width" constant="140" id="5DD-zG-Ut8"/>
+                                    <constraint firstAttribute="centerX" secondItem="WsV-I4-SyD" secondAttribute="centerX" constant="-0.5" id="5kh-kf-2hP"/>
+                                    <constraint firstItem="uRL-A7-DA4" firstAttribute="top" secondItem="WsV-I4-SyD" secondAttribute="bottom" constant="8" id="83Q-BW-xiT"/>
+                                    <constraint firstAttribute="height" constant="146" id="9gH-g2-9kH"/>
+                                    <constraint firstItem="WsV-I4-SyD" firstAttribute="top" secondItem="QzX-j2-z0B" secondAttribute="top" constant="20" id="IB7-Ah-q7P"/>
+                                    <constraint firstAttribute="bottom" secondItem="wVg-n7-jhg" secondAttribute="bottom" constant="20" id="NVA-8M-H6d"/>
+                                    <constraint firstItem="wVg-n7-jhg" firstAttribute="top" secondItem="uRL-A7-DA4" secondAttribute="bottom" constant="8" id="aXC-21-Uzq"/>
+                                    <constraint firstAttribute="centerX" secondItem="uRL-A7-DA4" secondAttribute="centerX" id="jV6-sn-IEi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="QzX-j2-z0B" secondAttribute="centerX" id="7HW-OJ-ydz"/>
+                            <constraint firstAttribute="centerY" secondItem="QzX-j2-z0B" secondAttribute="centerY" id="VQR-D2-a8c"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEf-m5-EEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="504"/>
+        </scene>
+    </scenes>
+</document>
