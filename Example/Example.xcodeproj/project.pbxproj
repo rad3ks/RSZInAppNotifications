@@ -11,9 +11,9 @@
 		4B1231E9EABDB2DB237F5B45 /* RSZPresenter+RSZSpecAccessors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1239C11E26F4C04D26280C /* RSZPresenter+RSZSpecAccessors.m */; };
 		4B123342DFEAB5180768A27A /* RSZPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B12301B8244752A104E5883 /* RSZPresenter.m */; };
 		4B1233B402761CD09E18A26A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1232D74100528EE84F7154 /* main.m */; };
+		4B123420CD73CA345E10965F /* RSZBaseContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B123D35D8CB436349C1BE5A /* RSZBaseContainerViewController.m */; };
 		4B1234AD3C6B1FA014F65461 /* RSZNotificationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1239BBD2DF651A66A622E6 /* RSZNotificationOperation.m */; };
 		4B1234D5B733CC43EA831821 /* RSZNotification+RSZSpecAccessors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1233971AAB5B82B3D2CA58 /* RSZNotification+RSZSpecAccessors.m */; };
-		4B12369A336B30EEE8B6B8DA /* RSZBaseContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B123A1CF9FD35D5E58B6E3D /* RSZBaseContainerViewController.m */; };
 		4B1236C977563C48F6141A34 /* RSZNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B12324E17C9A99C9DC59CB5 /* RSZNotification.m */; };
 		4B123A694C9A714338434C49 /* UIView+RSZAssociatedViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B12368E77ED5842C2F2F875 /* UIView+RSZAssociatedViewFactory.m */; };
 		4B123ABC8DA9B45BF30007D5 /* RSZPresenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1238FADC952DBAA2C68757 /* RSZPresenterSpec.m */; };
@@ -45,6 +45,7 @@
 		4B12304745C2B53272356B7F /* RSZNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSZNotification.h; sourceTree = "<group>"; };
 		4B1230AA1AD57B8E7E4F141A /* UIView+RSZAssociatedViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RSZAssociatedViewFactory.h"; sourceTree = "<group>"; };
 		4B1230C13CB5034EBFC0EEA6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4B1230E1FE8B31260769036D /* RSZBaseContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSZBaseContainerViewController.h; sourceTree = "<group>"; };
 		4B12324E17C9A99C9DC59CB5 /* RSZNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSZNotification.m; sourceTree = "<group>"; };
 		4B1232CAD85DBF804354104B /* GCD+Cancellation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GCD+Cancellation.h"; sourceTree = "<group>"; };
 		4B1232D74100528EE84F7154 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,11 +59,10 @@
 		4B1238FADC952DBAA2C68757 /* RSZPresenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSZPresenterSpec.m; sourceTree = "<group>"; };
 		4B1239BBD2DF651A66A622E6 /* RSZNotificationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSZNotificationOperation.m; sourceTree = "<group>"; };
 		4B1239C11E26F4C04D26280C /* RSZPresenter+RSZSpecAccessors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RSZPresenter+RSZSpecAccessors.m"; sourceTree = "<group>"; };
-		4B1239CBC04326A447F56CF7 /* RSZBaseContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSZBaseContainerViewController.h; sourceTree = "<group>"; };
 		4B123A0F059F42B909C015B3 /* RSZPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSZPresenter.h; sourceTree = "<group>"; };
-		4B123A1CF9FD35D5E58B6E3D /* RSZBaseContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSZBaseContainerViewController.m; sourceTree = "<group>"; };
 		4B123A51DBA1A23D8CDF703B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4B123C8AE16AC67C6211457F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B123D35D8CB436349C1BE5A /* RSZBaseContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSZBaseContainerViewController.m; sourceTree = "<group>"; };
 		4B123E466D633AC813783E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		4B123ED932BE63189DB1F5EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4B123FBDBDB06256DA200068 /* RSZNotification+RSZSpecAccessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSZNotification+RSZSpecAccessors.h"; sourceTree = "<group>"; };
@@ -112,11 +112,11 @@
 				4B12324E17C9A99C9DC59CB5 /* RSZNotification.m */,
 				4B123023527553796C497B85 /* RSZNotificationOperation.h */,
 				4B1239BBD2DF651A66A622E6 /* RSZNotificationOperation.m */,
-				4B1239CBC04326A447F56CF7 /* RSZBaseContainerViewController.h */,
-				4B123A1CF9FD35D5E58B6E3D /* RSZBaseContainerViewController.m */,
 				4B123A0F059F42B909C015B3 /* RSZPresenter.h */,
 				4B12301B8244752A104E5883 /* RSZPresenter.m */,
 				4B1232CAD85DBF804354104B /* GCD+Cancellation.h */,
+				4B1230E1FE8B31260769036D /* RSZBaseContainerViewController.h */,
+				4B123D35D8CB436349C1BE5A /* RSZBaseContainerViewController.m */,
 			);
 			name = RSZInAppNotifications;
 			path = ../../RSZInAppNotifications;
@@ -392,8 +392,8 @@
 				4B123CACF0563C6FF697B4C8 /* ViewController.m in Sources */,
 				4B1236C977563C48F6141A34 /* RSZNotification.m in Sources */,
 				4B1234AD3C6B1FA014F65461 /* RSZNotificationOperation.m in Sources */,
-				4B12369A336B30EEE8B6B8DA /* RSZBaseContainerViewController.m in Sources */,
 				4B123342DFEAB5180768A27A /* RSZPresenter.m in Sources */,
+				4B123420CD73CA345E10965F /* RSZBaseContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +556,7 @@
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				"WARNING_CFLAGS[arch=*]" = "";
 			};
 			name = Debug;
 		};
