@@ -2,10 +2,12 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^on_embed_segue_block_t)(UIViewController *controller);
-
-NSString *const kEmbeddedSegueIdentifier = @"ContainerEmbedSegue";
+typedef void(^on_embedded_segue_block_t)(UIViewController *controller);
 
 @interface RSZBaseContainerViewController : UIViewController
-@property (nonatomic, strong) on_embed_segue_block_t onEmbedSegue;
+
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController;
+
+@property (nonatomic, strong) on_embedded_segue_block_t onEmbeddedSegue;
+
 @end
