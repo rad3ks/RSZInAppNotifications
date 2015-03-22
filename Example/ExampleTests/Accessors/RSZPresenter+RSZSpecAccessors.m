@@ -4,6 +4,8 @@
 
 #import "RSZPresenter+RSZSpecAccessors.h"
 
+#pragma clang diagnostic ignored "-Wincomplete-implementation"
+
 @implementation RSZPresenter (RSZSpecAccessors)
 
 @end

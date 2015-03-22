@@ -4,6 +4,7 @@
 
 #import "RSZNotification+RSZSpecAccessors.h"
 
+#pragma clang diagnostic ignored "-Wincomplete-implementation"
 
 @implementation RSZNotification (RSZSpecAccessors)
 @end
